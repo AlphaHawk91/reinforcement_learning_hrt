@@ -1,0 +1,10 @@
+{
+    "tickers" : ["TCS.NS","HDFCBANK.NS","SBIN.NS"],
+    "start" : "2025-04-01",
+    "end" : "2025-05-01",
+    
+    "utility" : {
+        "interval" : "1m",
+        "period" : "1d"
+    }
+}
