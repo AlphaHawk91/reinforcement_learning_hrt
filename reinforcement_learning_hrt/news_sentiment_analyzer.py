@@ -104,5 +104,5 @@ if __name__ == "__main__":
         csv_filename = f"{ticker}_news_sentiment.csv"
         result_df.to_csv(csv_filename, index=False)
         print(f"\nResults saved to {csv_filename}")
-    else:
+    else: 
         print("No news available for analysis")
