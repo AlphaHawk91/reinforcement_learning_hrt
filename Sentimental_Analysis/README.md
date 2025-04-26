@@ -23,6 +23,3 @@ This tool can be used to help traders make data-driven decisions by evaluating t
   - `pandas` - for data manipulation and CSV export.
 
 You can install the required packages by running:
-
-```bash
-pip install -r requirements.txt
