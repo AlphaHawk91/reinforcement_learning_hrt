@@ -21,5 +21,3 @@ This tool can be used to help traders make data-driven decisions by evaluating t
   - `transformers` - for the FinBERT sentiment model.
   - `torch` - required by the Hugging Face model.
   - `pandas` - for data manipulation and CSV export.
-
-You can install the required packages by running:
