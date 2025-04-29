@@ -20,10 +20,6 @@
         "interval": "1d"
     },
 
-    
-    
-    
-
     "backup": {
         "tickers": [
             "TCS.NS",
