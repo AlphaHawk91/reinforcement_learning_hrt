@@ -29,10 +29,8 @@ if __name__ == "__main__" :
         if data_type in config:
 
             # Download the data
-            # filename = download_data(config, data_type)
-            # print("Data downloaded.")
-
-            
+            filename = download_data(config, data_type)
+            print("Data downloaded.")            
 
             # Preprocess the data
             cleaned_file_path = preprocess_data(config, data_type=data_type)
