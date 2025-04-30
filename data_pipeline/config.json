@@ -1,10 +1,35 @@
-{
-    "tickers" : ["TCS.NS","HDFCBANK.NS","SBIN.NS"],
-    "start" : "2025-04-01",
-    "end" : "2025-05-01",
+{   
+    "training" : {
+        "start": "2015-01-01",
+        "end": "2019-12-31"
+    },
+    "validation" : {
+        "start": "2020-01-01",
+        "end": "2020-12-31"
+    },
+
+    "tickers": [
+        "TCS.NS",
+        "HDFCBANK.NS",
+        "SBIN.NS"
+    ],
+
+    "utility": {
+        "interval": "1d"
+    },
     
-    "utility" : {
-        "interval" : "1m",
-        "period" : "1d"
+    
+    "backup": {
+        "tickers": [
+            "TCS.NS",
+            "HDFCBANK.NS",
+            "SBIN.NS"
+        ],
+        "start": "2025-04-01",
+        "end": "2025-05-01",
+        "utility": {
+            "interval": "1m",
+            "period": "1d"
+        }
     }
 }

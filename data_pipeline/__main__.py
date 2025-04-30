@@ -25,10 +25,13 @@ if __name__ == "__main__" :
 
     print("Configuration loaded.")
 
-    # Download the data
-    filename = download_data(config)
-    print("Data downloaded.")
+    for data_type in ["training", "validation"]:
+        if data_type in config:
 
-    # Preprocess the data
-    cleaned_file_path = preprocess_data(config, filename)
-    print(f"Data preprocessed and saved to {cleaned_file_path}.")
+            # Download the data
+            filename = download_data(config, data_type)
+            print("Data downloaded.")            
+
+            # Preprocess the data
+            cleaned_file_path = preprocess_data(config, data_type=data_type)
+            print(f"Data preprocessed and saved to {cleaned_file_path}.")
