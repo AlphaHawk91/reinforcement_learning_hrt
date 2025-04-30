@@ -45,15 +45,15 @@ def preprocess_data(config, file_path : str = "intraday_data.csv", data_type : s
 
     df = df.sort_values(by=['Ticker', 'Date'])  # very important!
     df['Forward_Return'] = df.groupby('Ticker')['Close'].shift(-1) / df['Close'] - 1
-    df['Forward_Return'] = df['Forward_Return'] * 100  # percent form
+    # df['Forward_Return'] = df['Forward_Return'] * 100  # percent form
 
     df.fillna({'Forward_Return': 0}, inplace=True)
     df.fillna({'VWAP': 0}, inplace=True)
 
-    # # Normalization using MinMaxScaler
-    # scaler = MinMaxScaler()
-    # column_range = df.columns[1:len(df.columns)-1]
-    # df[column_range] = scaler.fit_transform(df[column_range])
+    # Normalization using MinMaxScaler
+    scaler = MinMaxScaler()
+    column_range = df.columns[1:len(df.columns)-1]
+    df[column_range] = scaler.fit_transform(df[column_range])
 
     # Save Cleaned Data for Analysis
     cleaned_file_path = f"Processed_{file_path}"

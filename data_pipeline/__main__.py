@@ -29,7 +29,7 @@ if __name__ == "__main__" :
         if data_type in config:
 
             # Download the data
-            filename = download_data(config, data_type)
+            # filename = download_data(config, data_type)
             print("Data downloaded.")            
 
             # Preprocess the data

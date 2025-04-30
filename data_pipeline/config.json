@@ -11,7 +11,9 @@
     "tickers": [
         "TCS.NS",
         "HDFCBANK.NS",
-        "SBIN.NS"
+        "SBIN.NS",
+        "VEDL.NS",
+        "BHARTIARTL.NS"
     ],
 
     "utility": {
